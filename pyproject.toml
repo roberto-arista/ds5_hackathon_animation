@@ -11,6 +11,13 @@ drawBot = { git = "https://github.com/typemytype/drawbot.git" }
 mutatorMath = { git = "https://github.com/LettError/MutatorMath.git" }
 icecream = "^2.1.3"
 
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+
+[tool]
+black = { line-length = 120 }
+isort = { profile = "black" }
+
 
 [build-system]
 requires = ["poetry-core"]
